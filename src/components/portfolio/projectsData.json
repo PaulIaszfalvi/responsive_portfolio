@@ -1,0 +1,21 @@
+[
+  {
+    "title": "Python Memory Game",
+    "image": "PythonMemoryGame.png",
+    "description": "A simple python3 project using the tkinter library and various image processing libraries to create a memory game.",
+    "link": "https://github.com/PaulIaszfalvi/Python_Projects_Fun/tree/main/Mid/MemoryGame"
+  },
+  {
+    "title": "News Aggregator",
+    "image": "NewsAggregator.png",
+    "description": "A full MERN stack news aggregator built from scratch. ",
+    "goToLink": "Test it out",
+    "link": ""
+  },
+  {
+    "title": "Project 3",
+    "image": "project3.jpg",
+    "description": "This is the third project",
+    "link": ""
+  }
+]

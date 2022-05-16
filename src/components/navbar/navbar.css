@@ -1,0 +1,72 @@
+.navbar {
+  display: flex;
+  z-index: 10;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 0;
+  position: fixed;
+  justify-content: center;
+}
+
+.navbar a {
+  all: unset;
+}
+
+.nav-items {
+  flex: 1;
+  max-width: 1200px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0px 50px;
+  flex-direction: row;
+}
+
+.links {
+  flex: 1;
+  display: inline-flex;
+  justify-content: flex-start;
+  gap: 20px;
+  align-items: center;
+}
+
+.email-text {
+  margin-bottom: unset;
+}
+
+.pages {
+  flex: 2;
+  display: inline-flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.pages:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .navbar {
+    width: 25px;
+    height: 100vh;
+    align-self: flex-end;
+    top: 0;
+    right: 0;
+    align-items: stretch;
+  }
+
+  .links {
+    writing-mode: vertical-rl;
+  }
+
+  .pages {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    align-items: center;
+  }
+
+  .mobile-border {
+    border: 1px solid white;
+    border-radius: 25px;
+  }
+}

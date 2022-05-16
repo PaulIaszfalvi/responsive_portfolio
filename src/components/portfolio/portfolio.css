@@ -1,0 +1,14 @@
+.portfoliopage {
+  padding-top: 100px;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+  height: 100vh;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.card {
+  display: inline-flex;
+  width: 18rem;
+  margin: 2rem;
+}
