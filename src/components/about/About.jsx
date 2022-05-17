@@ -2,7 +2,7 @@ import "./about.css";
 
 function About() {
   return (
-    <div className="aboutpage" id="about">
+    <div className="aboutpage p-5 mx-xs-1 mx-md-auto" id="about">
       <div className="row">
         <div className="self-description col-8 px-20">
           <p>Personal interests in software development.</p>

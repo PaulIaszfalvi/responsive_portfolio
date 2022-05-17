@@ -1,48 +1,59 @@
 .homepage {
   padding-top: 50px;
   background: rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(6px);
+
   height: 100vh;
   max-width: 1200px;
-  margin: auto;
-}
-
-@-webkit-keyframes hvr-pop {
-  50% {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-  }
-}
-@keyframes hvr-pop {
-  50% {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-  }
-}
-
-/* Nav button animation */
-.hvr-pop {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-.hvr-pop:hover,
-.hvr-pop:focus,
-.hvr-pop:active {
-  -webkit-animation-name: hvr-pop;
-  animation-name: hvr-pop;
-  -webkit-animation-duration: 0.3s;
-  animation-duration: 0.3s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
 }
 
 @media only screen and (max-width: 700px) {
   .homepage {
     padding-top: 0px;
   }
+
+  .email-text {
+    font-size: 12px;
+  }
+
+  .pages {
+    font-size: 12px;
+  }
+}
+
+.paragraph {
+  font-size: 24px;
+  text-indent: 40px;
+  line-height: 2em;
+}
+
+.photo {
+  background-image: url("../images/circuit.jpg");
+  background-color: rgba(112, 112, 235, 0.7);
+  background-blend-mode: multiply;
+  float: right;
+  width: 75%;
+}
+
+.statement {
+  float: left;
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.buttons {
+  height: 20vh;
+  width: 20vw;
+  display: flex;
+  margin-left: 10%;
+}
+
+.text-name {
+  color: white;
+  font-family: "Merienda", cursive;
+}
+
+.text-job-title {
+  color: white;
+  font-weight: 900;
 }

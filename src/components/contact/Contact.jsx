@@ -20,7 +20,7 @@ const Contact = () => {
   // }
 
   return (
-    <div className="contactpage" id="contact">
+    <div className="contactpage p-5 mx-xs-1 mx-md-auto" id="contact">
       <div className="formbox container">
         <form
           action={FORM_ENDPOINT}
