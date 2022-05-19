@@ -23,13 +23,11 @@ const Home = () => {
 
           <br />
           <p className="paragraph p-10 ">
-            I am a motivated Fullstack / Front-End Developer passionate about
+            I am a motivated Fullstack Developer, passionate about
             problem-solving with creative solutions and a keen eye for visual
-            aesthetics that follow good design principles. My 10+ years of
-            experience as a graphic designer developing print, digital, and
-            motion graphics materials allowed me to grow as a reliable and
-            results-driven team player that delivers with a growth mindset and
-            commitment to success.
+            aesthetics that follow good design principles. Presently determined
+            to grow as a reliable and results-driven team player that delivers
+            with a growth mindset and commitment to success.
           </p>
           <div className="resume text-center btn-container order-xs-3 order-md-3 order-s-3">
             <a

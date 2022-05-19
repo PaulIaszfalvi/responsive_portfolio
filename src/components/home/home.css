@@ -22,10 +22,13 @@
 }
 
 .paragraph {
-  font-size: 24px;
+  color: white;
+  font-size: 20px;
   text-indent: 40px;
   line-height: 2em;
   align-items: center;
+
+  position: relative;
 }
 
 .photo {
@@ -65,7 +68,7 @@
   padding: 20px;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   .homepage {
     padding-top: 0px;
     height: 100%;

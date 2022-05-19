@@ -6,10 +6,10 @@ function Portfolio() {
   const baseUrl = "../images/";
   return (
     <div className="portfoliopage p-5 mx-xs-1 mx-md-auto" id="portfolio">
-      <div className="content container horizontal-scrollable">
-        <div className="row text-center">
+      <div className="content container horizontal-scrollable ">
+        <div className="gird-container row ml-auto">
           {projectsData.map((data, i) => (
-            <div className="col-xs-12 col-md-4" key={i}>
+            <div key={i}>
               <GridItem
                 title={data.title}
                 image={baseUrl + data.image}

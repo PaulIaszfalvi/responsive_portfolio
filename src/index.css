@@ -8,7 +8,7 @@ body {
 
   /* Entire website background */
   /* background-color: grey; */
-  background-image: url(./components/images/background6.jpg);
+  background-image: url(./components/images/background3.jpg);
 
   /* Create a parallax effect */
   background-attachment: fixed;
@@ -48,7 +48,7 @@ li {
   flex-direction: row;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   .content {
     flex-direction: column;
   }

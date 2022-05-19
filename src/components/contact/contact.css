@@ -6,12 +6,28 @@
 }
 
 .formbox {
-  max-width: 700px;
+  max-width: 100%;
+  margin-top: 20vh;
+  text-align: center;
+}
+
+.formbox textarea {
+  height: 20vh;
+  width: 50vw;
+}
+
+.portfolio-copyright {
+  text-align: center;
+}
+
+.contactpage p {
+  margin-top: 30vh;
 }
 
 .portfolio-copyright a {
   all: unset;
 }
+
 .portfolio-copyright a:hover {
   all: unset;
   cursor: pointer;

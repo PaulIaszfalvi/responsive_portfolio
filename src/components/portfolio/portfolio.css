@@ -6,8 +6,12 @@
   margin: auto;
 }
 
-.card {
-  display: inline-flex;
-  width: 18rem;
-  margin: 2rem;
+.gird-container {
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 800px) {
+  .portfoliopage {
+    height: 100%;
+  }
 }
