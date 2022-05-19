@@ -3,7 +3,7 @@ import "./about.css";
 function About() {
   return (
     <div className="aboutpage p-5 mx-xs-1 mx-md-auto" id="about">
-      <div className="row">
+      <div className="content row">
         <div className="self-description col-8 px-20">
           <p>Personal interests in software development.</p>
           <p>
@@ -19,7 +19,7 @@ function About() {
             simulations.
           </p>
         </div>
-        <div className="skills-set col-4">
+        <div className="skills-set col-4 mobile-font-size">
           <h1 className="display-4">Skills</h1>
           <br />
           <ul>

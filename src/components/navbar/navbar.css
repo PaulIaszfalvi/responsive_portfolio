@@ -35,6 +35,21 @@
   margin-bottom: unset;
 }
 
+.email-text-firstname {
+  -webkit-text-stroke: 1px rgb(66 133 244);
+}
+.email-text-period {
+  -webkit-text-stroke: 1px rgb(219 68 55);
+}
+
+.email-text-lastname {
+  -webkit-text-stroke: 1px rgb(244 180 0);
+}
+
+.email-text-link {
+  -webkit-text-stroke: 1px rgb(15 157 88);
+}
+
 .pages {
   flex: 2;
   display: inline-flex;

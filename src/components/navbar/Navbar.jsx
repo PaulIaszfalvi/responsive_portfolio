@@ -7,7 +7,13 @@ const Navbar = () => {
         <div className="nav-items row align-items-center">
           <div className="links">
             <div className="email">
-              <p className="email-text">Paul.Iaszfalvi@gmail.com</p>
+              <p className="email-text">
+                <span className="email-text-firstname">Paul</span>
+                <span className="email-text-period">.</span>
+                <span className="email-text-lastname">Iaszfalvi</span>
+
+                <span className="email-text-link">@gmail.com</span>
+              </p>
             </div>
             <div className="github hvr-pop">
               <a

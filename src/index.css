@@ -32,3 +32,15 @@ li {
 ::-webkit-scrollbar {
   display: none;
 }
+
+/* Content for each page */
+
+.content {
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 700px) {
+  .content {
+    flex-direction: column;
+  }
+}

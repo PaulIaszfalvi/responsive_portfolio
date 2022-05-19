@@ -4,8 +4,8 @@ import mySelfie from "../images/selfie-removebg.png";
 const Home = () => {
   return (
     <div className="homepage p-5 mx-xs-1 mx-md-auto" id="home">
-      <div className="row">
-        <div className="col-md-6 col-xs-12 order-md-2">
+      <div className="content row">
+        <div className="photo-container col-md-6 col-xs-12 order-md-2 order-xs-1">
           <img
             src={mySelfie}
             className="photo img-responsive center-block rounded-circle"
@@ -13,22 +13,35 @@ const Home = () => {
             id="mySelfie"
           />
         </div>
-        <div className="statement col-md-6 col-xs-12 order-md-1">
+        <div className="statement-container col-md-6 col-xs-12 order-md-1">
           <h1 className="text-name text-center display-1">Paul Iaszfalvi</h1>
-          <h1 className="text-job-title text-center display-3">
-            Software Developer
-          </h1>
+          <div className="title-background">
+            <h1 className="text-job-title text-center display-3">
+              Software Developer
+            </h1>
+          </div>
+
           <br />
           <p className="paragraph p-10 ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sit
-            voluptatem maiores cupiditate illum laboriosam consequatur, quisquam
-            dolores facilis, doloremque adipisci voluptatibus. Corporis
-            praesentium voluptates, tenetur nesciunt reprehenderit maxime
-            molestias amet ratione unde esse optio quaerat accusamus laborum
-            itaque tempore voluptatem sint laudantium vero nulla placeat
-            incidunt deleniti, eaque molestiae!
+            I am a motivated Fullstack / Front-End Developer passionate about
+            problem-solving with creative solutions and a keen eye for visual
+            aesthetics that follow good design principles. My 10+ years of
+            experience as a graphic designer developing print, digital, and
+            motion graphics materials allowed me to grow as a reliable and
+            results-driven team player that delivers with a growth mindset and
+            commitment to success.
           </p>
+          <div className="resume btn-container order-xs-3 order-md-3 order-s-3">
+            <a
+              href="/img/DanieleLongo-Resume_2022.pdf"
+              class="btn-outlined-light mt-3"
+              target="_blank"
+            >
+              Download My Resume
+            </a>
+          </div>
         </div>
+
         {/* <div className="buttons col-md-6 col-xs-12 order-md-3">
           <a
             href="../files/PaulIaszfalviResume.docx/"

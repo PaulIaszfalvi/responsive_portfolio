@@ -6,7 +6,7 @@ function Portfolio() {
   const baseUrl = "../images/";
   return (
     <div className="portfoliopage p-5 mx-xs-1 mx-md-auto" id="portfolio">
-      <div className="container horizontal-scrollable">
+      <div className="content container horizontal-scrollable">
         <div className="row text-center">
           {projectsData.map((data) => (
             <div className="col-xs-12 col-md-4">

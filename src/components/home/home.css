@@ -1,37 +1,38 @@
 .homepage {
   padding-top: 50px;
   background: rgba(0, 0, 0, 0.1);
-
   height: 100vh;
   max-width: 1200px;
+  margin: auto;
+  display: flex;
 }
 
-@media only screen and (max-width: 700px) {
-  .homepage {
-    padding-top: 0px;
-  }
+.photo-container {
+  flex: 1;
+}
 
-  .email-text {
-    font-size: 12px;
-  }
+.photo-container img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
 
-  .pages {
-    font-size: 12px;
-  }
+.statement-container {
+  flex: 1;
 }
 
 .paragraph {
   font-size: 24px;
   text-indent: 40px;
   line-height: 2em;
+  align-items: center;
 }
 
 .photo {
-  background-image: url("../images/circuit.jpg");
-  background-color: rgba(112, 112, 235, 0.7);
+  margin-top: 10px;
+  background-color: rgba(19, 19, 1, 0.7);
   background-blend-mode: multiply;
-  float: right;
-  width: 75%;
+  float: center;
 }
 
 .statement {
@@ -51,9 +52,34 @@
 .text-name {
   color: white;
   font-family: "Merienda", cursive;
+  /* -webkit-text-stroke: 2px rgb(120, 248, 0); */
 }
 
 .text-job-title {
   color: white;
   font-weight: 900;
+  -webkit-text-stroke: 2px rgba(73, 251, 53, 1);
+}
+
+.resume {
+  padding: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+  .homepage {
+    padding-top: 0px;
+    height: 100%;
+  }
+
+  .homepage h1 {
+    align-items: left;
+  }
+
+  .email-text {
+    font-size: 12px;
+  }
+
+  .pages {
+    font-size: 12px;
+  }
 }

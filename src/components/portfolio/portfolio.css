@@ -1,8 +1,7 @@
 .portfoliopage {
   padding-top: 100px;
   background: rgba(0, 0, 0, 0.1);
-
-  height: 100vh;
+  height: 100%;
   max-width: 1200px;
   margin: auto;
 }
