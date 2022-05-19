@@ -8,3 +8,11 @@
 .formbox {
   max-width: 700px;
 }
+
+.portfolio-copyright a {
+  all: unset;
+}
+.portfolio-copyright a:hover {
+  all: unset;
+  cursor: pointer;
+}

@@ -82,6 +82,18 @@ const Contact = () => {
         </div>
         <div className="phone col-xs-12 col-md-3">(954) 647-9813</div>
       </div> */}
+
+      <p className="portfolio-copyright text-white">
+        Copyright © 2022 - Paul Iaszfalvi |{" "}
+        <a
+          href="https://github.com/PaulIaszfalvi/responsive_portfolio"
+          className="btn-outlined-light mt-3 text-white"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Click here to this portfolio code base
+        </a>
+      </p>
     </div>
   );
 };

@@ -58,7 +58,7 @@
 .text-job-title {
   color: white;
   font-weight: 900;
-  -webkit-text-stroke: 2px rgba(73, 251, 53, 1);
+  -webkit-text-stroke: 2px rgb(0, 0, 0);
 }
 
 .resume {

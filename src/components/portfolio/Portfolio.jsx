@@ -8,8 +8,8 @@ function Portfolio() {
     <div className="portfoliopage p-5 mx-xs-1 mx-md-auto" id="portfolio">
       <div className="content container horizontal-scrollable">
         <div className="row text-center">
-          {projectsData.map((data) => (
-            <div className="col-xs-12 col-md-4">
+          {projectsData.map((data, i) => (
+            <div className="col-xs-12 col-md-4" key={i}>
               <GridItem
                 title={data.title}
                 image={baseUrl + data.image}

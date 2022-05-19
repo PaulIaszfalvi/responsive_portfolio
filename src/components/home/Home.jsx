@@ -31,11 +31,12 @@ const Home = () => {
             results-driven team player that delivers with a growth mindset and
             commitment to success.
           </p>
-          <div className="resume btn-container order-xs-3 order-md-3 order-s-3">
+          <div className="resume text-center btn-container order-xs-3 order-md-3 order-s-3">
             <a
-              href="/img/DanieleLongo-Resume_2022.pdf"
-              class="btn-outlined-light mt-3"
+              href="src/components/resume/PaulIaszfalviResume2022.docx"
+              className="btn-outlined-light mt-3"
               target="_blank"
+              download
             >
               Download My Resume
             </a>
