@@ -20,72 +20,83 @@ function About() {
           </p>
         </div>
         <div className="skills-set col-4 mobile-font-size">
-          <h1 className="display-4">Skills</h1>
+          <h1 className="display-4 text-center">Skills</h1>
           <br />
-          <ul>
-            <li>
-              <i className="devicon-html5-plain colored"> </i>
-              HTML5
-            </li>
-            <i className="devicon-css3-plain colored"> </i>
-            CSS3
-            <li className="ml-4">
-              <i className="devicon-bootstrap-plain-wordmark colored"></i>
-              Bootstrap
-            </li>
-            <li>
-              <i className="devicon-javascript-plain colored"> </i>Javascript
-            </li>
-            <li>
-              <i className="devicon-typescript-plain colored"> </i>
-              Typescript
-            </li>
-            <li>
-              <i className="devicon-nodejs-plain colored"> </i>
-              Node.js
-            </li>
-            <li>
-              <i className="devicon-c-plain colored"> </i>C
-            </li>
-            <li>
-              <i className="devicon-cplusplus-plain colored"> </i>C++
-            </li>
-            <li>
-              <i className="devicon-java-plain colored"> </i>Java
-            </li>
-            <li>
-              <i className="devicon-mongodb-plain colored"> </i>
-              MongoDB
-            </li>
-            <li>
-              <i className="devicon-mysql-plain colored"> </i>
-              MySQL
-            </li>
-            <li>
-              <i className="devicon-react-plain colored"> </i>
-              React
-            </li>
-            <li>
-              <i className="devicon-python-plain colored"> </i>
-              Python
-            </li>
-            <li>
-              <i className="devicon-git-plain colored"> </i>Git
-            </li>
-            <li>
-              <i className="devicon-github-plain colored"> </i>Github
-            </li>
+
+          <div className="main-skills">
+            <h1>Main Skills</h1>
             <br />
-            <li>
-              <i className="devicon-windows8-original colored"> </i>
-              Microsoft Windows
-            </li>
-            <li>
-              <i className="devicon-linux-plain colored"> </i>
-              Linux
-            </li>
-            <li className="row">Microsoft Office</li>
-          </ul>
+            <ul>
+              <li>
+                <i className="devicon-html5-plain colored"> </i>
+                HTML5
+              </li>
+              <i className="devicon-css3-plain colored"> </i>
+              CSS3
+              <li className="ml-4">
+                <i className="devicon-bootstrap-plain-wordmark colored"></i>
+                Bootstrap
+              </li>
+              <li>
+                <i className="devicon-javascript-plain colored"> </i>Javascript
+              </li>
+              <li>
+                <i className="devicon-react-plain colored"> </i>
+                React
+              </li>
+              <li>
+                <i className="devicon-nodejs-plain colored"> </i>
+                Node.js
+              </li>
+              <li>
+                <i className="devicon-python-plain colored"> </i>
+                Python
+              </li>
+              <li>
+                <i className="devicon-git-plain colored"> </i>Git
+              </li>
+              <li>
+                <i className="devicon-github-plain colored"> </i>Github
+              </li>
+              <br />
+              <li>
+                <i className="devicon-windows8-original colored"> </i>
+                Microsoft Windows
+              </li>
+              <li>
+                <i className="devicon-linux-plain colored"> </i>
+                Linux
+              </li>
+              <li className="row ml-4">Microsoft Office</li>
+            </ul>
+          </div>
+          <div className="familiar">
+            <h1>Familiar With</h1>
+            <br />
+            <ul>
+              <li>
+                <i className="devicon-typescript-plain colored"> </i>
+                Typescript
+              </li>
+              <li>
+                <i className="devicon-c-plain colored"> </i>C
+              </li>
+              <li>
+                <i className="devicon-cplusplus-plain colored"> </i>C++
+              </li>
+              <li>
+                <i className="devicon-java-plain colored"> </i>Java
+              </li>
+              <li>
+                <i className="devicon-mongodb-plain colored"> </i>
+                MongoDB
+              </li>
+              <li>
+                <i className="devicon-mysql-plain colored"> </i>
+                MySQL
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

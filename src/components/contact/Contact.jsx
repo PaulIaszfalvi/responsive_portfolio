@@ -1,30 +1,53 @@
 import "./contact.css";
+import { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const FORM_ENDPOINT = ""; // TODO - fill on the later step
 
 const Contact = () => {
-  // const [submitted, setSubmitted] = useState(false);
-  // const handleSubmit = () => {
-  //   setTimeout(() => {
-  //     setSubmitted(true);
-  //   }, 100);
-  // };
+  const form = useRef();
 
-  // if (submitted) {
-  //   return (
-  //     <>
-  //       <div className="text-2xl">Thank you!</div>
-  //       <div className="text-md">We'll be in touch soon.</div>
-  //     </>
-  //   );
-  // }
+  const [submitted, setSubmitted] = useState(false);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_e1p8c5c",
+        "template_jg7l49p",
+        form.current,
+        "5iYIJYv2EO5uBVpU5"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+
+    //   setTimeout(() => {
+    //     setSubmitted(true);
+    //   }, 100);
+    // };
+
+    // if (submitted) {
+    //   return (
+    //     <>
+    //       <div className="text-2xl">Thank you!</div>
+    //       <div className="text-md">We'll be in touch soon.</div>
+    //     </>
+    //   );
+  };
 
   return (
     <div className="contactpage p-5 mx-xs-1 mx-md-auto" id="contact">
       <div className="formbox container">
         <form
+          ref={form}
           action={FORM_ENDPOINT}
-          // onSubmit={handleSubmit}
+          onSubmit={handleSubmit}
           method="POST"
           target="_blank"
         >
@@ -64,24 +87,6 @@ const Contact = () => {
           </div>
         </form>
       </div>
-
-      {/* <div className="other text-center justify-content-center row gap-10">
-        <div className="email col-xs-12 col-md-3">
-          <button className="text-center">
-            <div className="row ">
-              <BsEnvelopeFill size="1.5em" className="" />
-              Paul.Iaszfalvi@gmail.com
-            </div>
-          </button>
-        </div>
-        <div className="linkedin col-xs-12 col-md-3">
-          <button>
-            Linked
-            <i className="devicon-linkedin-plain colored"> </i>
-          </button>
-        </div>
-        <div className="phone col-xs-12 col-md-3">(954) 647-9813</div>
-      </div> */}
 
       <p className="portfolio-copyright text-white">
         Copyright © 2022 - Paul Iaszfalvi |{" "}

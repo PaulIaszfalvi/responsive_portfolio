@@ -8,7 +8,7 @@ function Griditem({ title, image, description, goToLink, link }) {
   return (
     <>
       <div className="card">
-        <Image className="card-img-top" src={image} alt="Card image cap" />
+        <Image className="card-img-top p-2" src={image} alt="Card image cap" />
 
         <h5 className="card-title">{title}</h5>
         <p className="card-text">{description}</p>
