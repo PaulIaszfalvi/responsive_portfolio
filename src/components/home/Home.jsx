@@ -22,15 +22,15 @@ const Home = () => {
           </div>
 
           <br />
-          <p className="paragraph p-10 ">
+          <p className="paragraph p-10 pt-5 ">
             I am a motivated Fullstack Developer, passionate about
             problem-solving, determined to grow both as a reliable and
             results-driven team player and developer.
           </p>
-          <div className="resume text-center btn-container order-xs-3 order-md-3 order-s-3">
+          <div className="resume text-center btn-container order-xs-3 order-md-3 order-s-3 pt-5">
             <a
               href="src/components/resume/PaulIaszfalviResume2022.docx"
-              className="btn-outlined-light mt-3"
+              className="btn-outlined-light mt-3 "
               target="_blank"
               download
             >
