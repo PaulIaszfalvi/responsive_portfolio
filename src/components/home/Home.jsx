@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div className="homepage p-5 mx-1 mx-md-auto" id="home">
       <div className="content row">
-        <div className="photo-container col-md-6 col-xs-12 order-md-2 order-1">
+        <div className="photo-container col-md-6 col-12 order-md-2 order-1">
           <img
             src={mySelfie}
             className="photo img-responsive center-block rounded-circle"
