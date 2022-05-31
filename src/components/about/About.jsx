@@ -4,7 +4,7 @@ function About() {
   return (
     <div className="aboutpage p-5 mx-xs-1 mx-md-auto" id="about">
       <div className="content row">
-        <div className="self-description col-8 px-20">
+        <div className="self-description col-8 px-20 ">
           <p>Personal interests in software development.</p>
           <p>
             I majored in computer science because I enjoy making things. I
@@ -19,7 +19,7 @@ function About() {
             simulations.
           </p>
         </div>
-        <div className="skills-set col-4 mobile-font-size">
+        <div className="skills-set col-12 mobile-font-size col-md-4">
           <h1 className="display-4 text-center">Skills</h1>
           <br />
 

@@ -3,9 +3,9 @@ import mySelfie from "../images/selfie-removebg.png";
 
 const Home = () => {
   return (
-    <div className="homepage p-5 mx-xs-1 mx-md-auto" id="home">
+    <div className="homepage p-5 mx-1 mx-md-auto" id="home">
       <div className="content row">
-        <div className="photo-container col-md-6 col-xs-12 order-md-2 order-xs-1">
+        <div className="photo-container col-md-6 col-xs-12 order-md-2 order-1">
           <img
             src={mySelfie}
             className="photo img-responsive center-block rounded-circle"
@@ -13,7 +13,7 @@ const Home = () => {
             id="mySelfie"
           />
         </div>
-        <div className="statement-container col-md-6 col-xs-12 order-md-1">
+        <div className="statement-container col-md-6 col-12 order-md-1 order-2">
           <h1 className="text-name text-center display-1">Paul Iaszfalvi</h1>
           <div className="title-background">
             <h1 className="text-job-title text-center display-3">
@@ -27,7 +27,7 @@ const Home = () => {
             problem-solving, determined to grow both as a reliable and
             results-driven team player and developer.
           </p>
-          <div className="resume text-center btn-container order-xs-3 order-md-3 order-s-3 pt-5">
+          <div className="resume text-center btn-container order-3 pt-5">
             <a
               href="src/components/resume/PaulIaszfalviResume2022.docx"
               className="btn-outlined-light mt-3 "
