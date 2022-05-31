@@ -72,6 +72,7 @@
   .homepage {
     padding-top: 0px;
     height: 100%;
+    width: calc(100%-25px);
   }
 
   .homepage h1 {
@@ -84,5 +85,9 @@
 
   .pages {
     font-size: 12px;
+  }
+
+  .photo-container img {
+    width: 100%;
   }
 }

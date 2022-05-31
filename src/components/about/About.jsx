@@ -19,7 +19,7 @@ function About() {
             simulations.
           </p>
         </div>
-        <div className="skills-set col-12 mobile-font-size col-md-4">
+        <div className="skills-set col-12 mobile-font-size col-md-4 ">
           <h1 className="display-4 text-center">Skills</h1>
           <br />
 

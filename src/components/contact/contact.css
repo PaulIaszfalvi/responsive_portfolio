@@ -32,3 +32,10 @@
   all: unset;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 760px) {
+  .contactpage {
+    height: 100%;
+    width: calc(100% - 25px);
+  }
+}

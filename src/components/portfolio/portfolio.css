@@ -4,6 +4,7 @@
   height: 100%;
   max-width: 1200px;
   margin: auto;
+  display: inline-block;
 }
 
 .gird-container {
@@ -13,5 +14,6 @@
 @media only screen and (max-width: 760px) {
   .portfoliopage {
     height: 100%;
+    width: calc(100% - 25px);
   }
 }
