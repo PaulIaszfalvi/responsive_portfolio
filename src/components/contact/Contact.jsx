@@ -1,5 +1,5 @@
 import "./contact.css";
-import { useState, useRef } from "react";
+import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 const FORM_ENDPOINT = ""; // TODO - fill on the later step
@@ -7,7 +7,7 @@ const FORM_ENDPOINT = ""; // TODO - fill on the later step
 const Contact = () => {
   const form = useRef();
 
-  const [submitted, setSubmitted] = useState(false);
+  //const [submitted, setSubmitted] = useState(false);
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -78,10 +78,7 @@ const Contact = () => {
             />
           </div>
           <div className="mb-3 pt-0 text-center">
-            <button
-              className="bg-blue-500 text-white active:bg-blue-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-              type="submit"
-            >
+            <button className="btn btn-primary" type="submit">
               Send a message
             </button>
           </div>

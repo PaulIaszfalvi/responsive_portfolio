@@ -1,9 +1,8 @@
 .aboutpage {
   background: rgba(0, 0, 0, 0.1);
-  height: 100vh;
+  max-height: 100vh;
   max-width: 1200px;
   margin: auto;
-  display: inline-block;
 }
 
 .aboutpage p {
@@ -27,8 +26,8 @@
 
 @media only screen and (max-width: 760px) {
   .aboutpage {
-    height: 100%;
-    width: calc(100% - 25px);
+    max-height: 100%;
+    max-width: calc(100% - 25px);
   }
   .self-description p {
     font-size: 20px;

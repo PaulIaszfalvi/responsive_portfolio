@@ -1,7 +1,7 @@
 .homepage {
   padding-top: 50px;
   background: rgba(0, 0, 0, 0.1);
-  height: 100vh;
+  max-height: 100vh;
   max-width: 1200px;
   margin: auto;
   display: flex;
@@ -40,14 +40,14 @@
 
 .statement {
   float: left;
-  width: 50%;
+  max-width: 50%;
   flex-direction: column;
   justify-content: center;
 }
 
 .buttons {
-  height: 20vh;
-  width: 20vw;
+  max-height: 20vh;
+  max-width: 20vw;
   display: flex;
   margin-left: 10%;
 }
@@ -71,7 +71,7 @@
 @media only screen and (max-width: 760px) {
   .homepage {
     padding-top: 0px;
-    height: 100%;
+    max-height: 100%;
     width: calc(100%-25px);
   }
 
@@ -88,6 +88,6 @@
   }
 
   .photo-container img {
-    width: 100%;
+    max-width: 100%;
   }
 }
