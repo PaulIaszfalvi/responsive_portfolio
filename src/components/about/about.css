@@ -18,10 +18,20 @@
 }
 
 .skills-set {
-  font-size: 20px;
   color: white;
   background: rgba(0, 0, 0, 0.1);
   border-radius: 50px;
+}
+
+.skills-set h1 {
+}
+
+.main-skills {
+  font-size: 1rem;
+}
+
+.familiar-skills {
+  font-size: 1rem;
 }
 
 @media only screen and (max-width: 760px) {

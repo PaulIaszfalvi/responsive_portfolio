@@ -5,7 +5,7 @@ import projectsData from "./projectsData.json";
 function Portfolio() {
   const baseUrl = "../images/";
   return (
-    <div className="portfoliopage p-5 mx-xs-1 mx-md-auto" id="portfolio">
+    <div className="portfoliopage" id="portfolio">
       <div className="content container horizontal-scrollable ">
         <div className="gird-container row ml-auto">
           {projectsData.map((data, i) => (

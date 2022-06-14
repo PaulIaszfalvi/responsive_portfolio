@@ -70,7 +70,7 @@ function About() {
               <li className="row ml-4">Microsoft Office</li>
             </ul>
           </div>
-          <div className="familiar">
+          <div className="familiar-skills">
             <h1>Familiar With</h1>
             <br />
             <ul>
