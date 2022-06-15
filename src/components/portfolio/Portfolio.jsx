@@ -7,7 +7,7 @@ function Portfolio() {
   return (
     <div className="portfoliopage" id="portfolio">
       <div className="content container horizontal-scrollable ">
-        <div className="gird-container row ml-auto">
+        <div className="gird-container row mx-auto">
           {projectsData.map((data, i) => (
             <div key={i}>
               <GridItem
