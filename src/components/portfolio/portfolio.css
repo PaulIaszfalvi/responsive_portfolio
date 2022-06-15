@@ -1,0 +1,9 @@
+.portfoliopage {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.gird-container {
+  justify-content: space-around;
+}

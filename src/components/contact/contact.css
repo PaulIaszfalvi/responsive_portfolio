@@ -1,0 +1,27 @@
+.contactpage {
+  margin: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.formbox {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.formbox input,
+textarea {
+  width: 75vw;
+  max-width: 700px;
+}
+
+.formbox textarea {
+  height: 20vh;
+}
+.portfolio-copyright {
+  text-align: center;
+}
