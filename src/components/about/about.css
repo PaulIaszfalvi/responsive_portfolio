@@ -1,8 +1,12 @@
 .aboutpage {
   background: rgba(0, 0, 0, 0.1);
-  max-height: 100vh;
+  min-height: 100vh;
   max-width: 1200px;
   margin: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .aboutpage p {
@@ -32,18 +36,4 @@
 
 .familiar-skills {
   font-size: 1rem;
-}
-
-@media only screen and (max-width: 760px) {
-  .aboutpage {
-    max-height: 100%;
-    max-width: calc(100% - 25px);
-  }
-  .self-description p {
-    font-size: 20px;
-  }
-  .skills-set {
-    font-size: 12px;
-    padding-right: 50px;
-  }
 }
