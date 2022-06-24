@@ -5,10 +5,17 @@
   min-height: 100vh;
 }
 
+.home-content-container {
+  height: 100vh;
+  align-items: center;
+}
+
 .photo {
   width: 100%;
   max-width: 500px;
   margin: auto;
+  border-radius: 100px;
+  border: 2px solid white;
 }
 
 .photo-container {
@@ -31,4 +38,7 @@
 
 .paragraph {
   font-size: 20px;
+}
+
+@media (min-width: 600px) {
 }

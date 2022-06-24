@@ -5,6 +5,9 @@
   display: inline-flex;
   width: 18rem;
   margin: 2rem;
+  border: 2px solid;
+
+  border-top: 2px solid;
 }
 
 .card-img-top {
@@ -18,4 +21,8 @@
 
 .card-text {
   text-align: center;
+}
+
+.btn {
+  border-radius: 0 0 20px 20px;
 }

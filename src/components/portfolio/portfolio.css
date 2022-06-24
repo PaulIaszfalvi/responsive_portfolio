@@ -5,8 +5,14 @@
   max-width: 1200px;
   display: flex;
   align-items: center;
+
+  border-top: 2px solid;
 }
 
 .gird-container {
   justify-content: space-around;
+}
+
+.portfolio-content {
+  overflow-x: scroll;
 }

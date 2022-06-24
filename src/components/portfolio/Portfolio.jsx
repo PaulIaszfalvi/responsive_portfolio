@@ -6,7 +6,7 @@ function Portfolio() {
   const baseUrl = "../images/";
   return (
     <div className="portfoliopage" id="portfolio">
-      <div className="content container horizontal-scrollable ">
+      <div className="portfolio-content container horizontal-scrollable ">
         <div className="gird-container row mx-auto">
           {projectsData.map((data, i) => (
             <div key={i}>

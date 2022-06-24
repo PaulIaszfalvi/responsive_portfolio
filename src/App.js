@@ -7,11 +7,12 @@ function App() {
       <header>
         <Navbar />
       </header>
-
-      <Home />
-      <About />
-      <Portfolio />
-      <Contact />
+      <div className="sections">
+        <Home />
+        <About />
+        <Portfolio />
+        <Contact />
+      </div>
     </>
   );
 }

@@ -17,7 +17,6 @@ body {
   background-size: cover;
 
   /*Remove scrollbar */
-  scrollbar-width: none;
 }
 
 code {

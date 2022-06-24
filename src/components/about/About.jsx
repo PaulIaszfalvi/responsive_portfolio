@@ -18,6 +18,12 @@ function About() {
             I'm curious about robotics, machine learning, modeling and
             simulations.
           </p>
+          <p>
+            I am self taught in HTML, CSS, Javascript, React, MongoDB, Python,
+            and am continuing to perfect my skillset in those subjects.
+            Presently I am also in the process of learning AWS, data analysis
+            with Python, Docker and Kubernetes.
+          </p>
         </div>
         <div className="skills-set col-12 mobile-font-size col-md-4 ">
           <h1 className="display-4 text-center">Skills</h1>

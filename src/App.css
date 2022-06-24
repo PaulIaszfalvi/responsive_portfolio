@@ -1,0 +1,7 @@
+/* .sections {
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-snap-type: mandatory;
+  overflow: auto;
+  scroll-behavior: smooth;
+} */
