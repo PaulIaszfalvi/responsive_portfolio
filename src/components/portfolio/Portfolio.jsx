@@ -6,6 +6,12 @@ function Portfolio() {
   const baseUrl = "../images/";
   return (
     <div className="portfoliopage" id="portfolio">
+      <div className="project-statement">
+        <p>
+          All of these projects were build by me without the use of tutorials.
+        </p>
+      </div>
+
       <div className="portfolio-content container horizontal-scrollable ">
         <div className="gird-container row mx-auto">
           {projectsData.map((data, i) => (

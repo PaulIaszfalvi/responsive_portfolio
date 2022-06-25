@@ -23,12 +23,12 @@ const Home = () => {
           </div>
 
           <br />
-          <p className="paragraph p-10 pt-5 ">
+          <p className="home-paragraph p-10 pt-5 ">
             I am a motivated Fullstack Developer, passionate about
             problem-solving, determined to grow both as a reliable and
             results-driven team player and developer.
           </p>
-          <div className="resume text-center btn-container order-3 pt-5">
+          <div className="resume-link text-center btn-container order-3 pt-5">
             <a
               href={resume}
               download
@@ -36,7 +36,7 @@ const Home = () => {
               target="_blank"
               rel="noreferrer"
             >
-              Download My Resume
+              <h3>Download My Resume</h3>
             </a>
           </div>
         </div>

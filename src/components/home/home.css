@@ -29,16 +29,20 @@
 }
 
 .text-name {
+  font-family: "Hurricane", cursive;
   font-size: 4rem;
 }
 
 .text-job-title {
+  font-family: "Orbitron", sans-serif;
   font-size: 4rem;
 }
 
-.paragraph {
-  font-size: 20px;
+.home-paragraph {
+  font-size: 2rem;
+  text-indent: 2rem;
 }
 
-@media (min-width: 600px) {
+.resume-link a:hover {
+  text-decoration: none;
 }

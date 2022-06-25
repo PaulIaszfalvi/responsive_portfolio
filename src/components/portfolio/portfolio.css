@@ -4,9 +4,17 @@
   min-height: 100vh;
   max-width: 1200px;
   display: flex;
+  flex-direction: column;
   align-items: center;
 
   border-top: 2px solid;
+}
+
+.project-statement {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 4rem;
 }
 
 .gird-container {

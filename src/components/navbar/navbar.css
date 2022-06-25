@@ -101,6 +101,7 @@
   animation-timing-function: linear;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
+  color: rgba(85, 163, 252, 0.9);
 }
 
 @media only screen and (max-width: 760px) {
