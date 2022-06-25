@@ -16,6 +16,7 @@
   margin: auto;
   border-radius: 100px;
   border: 2px solid white;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .photo-container {
@@ -24,25 +25,44 @@
 }
 
 .statement-container {
-  color: white;
+  color: rgb(255, 255, 255);
   align-items: center;
 }
 
 .text-name {
   font-family: "Hurricane", cursive;
   font-size: 4rem;
+  color: silver;
 }
 
 .text-job-title {
   font-family: "Orbitron", sans-serif;
-  font-size: 4rem;
+  font-size: 3.5rem;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-weight: bold;
+  background-image: url(/home/paul/Programming/React/responsive_portfolio/src/components/images/binary.jpg);
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px white;
 }
 
 .home-paragraph {
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-indent: 2rem;
 }
 
 .resume-link a:hover {
   text-decoration: none;
+}
+
+@media (min-width: 1000px) {
+  .text-job-title {
+    font-size: 5rem;
+  }
+
+  .home-paragraph {
+    font-size: 2rem;
+  }
 }

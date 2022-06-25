@@ -16,7 +16,7 @@ function Griditem({ title, image, description, goToLink, link }) {
           href={link}
           target="_blank"
           rel="noreferrer"
-          className="btn btn-primary"
+          className="link-button btn btn-primary"
         >
           {goToLink || "GitHub"}
         </a>

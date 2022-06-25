@@ -29,3 +29,7 @@ textarea {
 .portfolio-copyright {
   text-align: center;
 }
+
+.submit-button {
+  border-radius: 50px;
+}

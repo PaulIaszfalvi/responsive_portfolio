@@ -17,10 +17,27 @@
   margin: 4rem;
 }
 
-.gird-container {
-  justify-content: space-around;
+.grid-container {
+  display: flex;
+  flex-direction: column;
 }
 
-.portfolio-content {
-  overflow-x: scroll;
+.cards {
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.cards-buttons {
+  margin: 1rem;
+}
+
+.button-left {
+  display: block;
+  height: 100%;
+  width: 5%;
+  color: white;
 }
