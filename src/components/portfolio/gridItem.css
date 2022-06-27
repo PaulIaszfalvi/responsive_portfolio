@@ -4,21 +4,32 @@
   color: white;
   display: inline-flex;
   width: 18rem;
+  height: 40rem;
   margin: 2rem;
   border: 2px solid gray;
   overflow: hidden;
 }
 
 .card-img-top {
-  border-radius: 20px;
+  object-fit: cover;
+  aspect-ratio: 1;
+  border-bottom: 2px solid gray;
 }
 
 .card-title {
   font-size: 24px;
   text-align: center;
+  margin: 2rem;
 }
 
 .card-text {
   text-align: center;
   font-size: 1.3rem;
+  align-items: flex-end;
+}
+
+.link-button {
+  position: absolute;
+  bottom: 0;
+  inline-size: 100%;
 }

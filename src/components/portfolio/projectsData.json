@@ -8,7 +8,7 @@
   {
     "title": "News Aggregator",
     "image": "NewsAggregator.png",
-    "description": "A full MERN stack news aggregator built from scratch. ",
+    "description": "A full MERN stack news aggregator built from scratch. Uses puppeteer for scraping online data in real time. ",
     "goToLink": "Test it out",
     "link": ""
   },
