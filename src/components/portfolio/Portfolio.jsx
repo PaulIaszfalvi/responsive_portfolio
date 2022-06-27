@@ -5,6 +5,17 @@ import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 
 function Portfolio() {
   const baseUrl = "../images/";
+
+  const scrollLeft = () => {
+    var slider = document.getElementById("scroll");
+    slider.scrollLeft = slider.scrollLeft - 300;
+  };
+
+  const scrollRight = () => {
+    var slider = document.getElementById("scroll");
+    slider.scrollLeft = slider.scrollLeft + 300;
+  };
+
   return (
     <div className="portfoliopage" id="portfolio">
       {/* <div className="project-statement">
@@ -14,9 +25,9 @@ function Portfolio() {
       </div> */}
 
       <div className="portfolio-content ">
-        <MdChevronLeft className="chevrons" />
+        <MdChevronLeft className="chevrons hvr-pop" onClick={scrollLeft} />
 
-        <div className="sliding-cards container">
+        <div id="scroll" className="sliding-cards container snap-inline">
           {projectsData.map((data, i) => (
             <div key={i}>
               <GridItem
@@ -30,7 +41,7 @@ function Portfolio() {
           ))}
         </div>
 
-        <MdChevronRight className="chevrons" />
+        <MdChevronRight className="chevrons hvr-pop" onClick={scrollRight} />
       </div>
     </div>
   );
