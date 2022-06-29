@@ -25,7 +25,10 @@ function Portfolio() {
       </div> */}
 
       <div className="portfolio-content ">
-        <MdChevronLeft className="chevrons hvr-pop" onClick={scrollLeft} />
+        <MdChevronLeft
+          className="chevrons hvr-pop rounded-circle"
+          onClick={scrollLeft}
+        />
 
         <div id="scroll" className="sliding-cards container snap-inline">
           {projectsData.map((data, i) => (
@@ -41,7 +44,10 @@ function Portfolio() {
           ))}
         </div>
 
-        <MdChevronRight className="chevrons hvr-pop" onClick={scrollRight} />
+        <MdChevronRight
+          className="chevrons hvr-pop rounded-circle"
+          onClick={scrollRight}
+        />
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import "./home.css";
 import mySelfie from "../images/selfie-removebg.png";
-import resume from "../resume/PaulIaszfalviResume2022.docx";
+import resume from "../resume/Paul-Iaszfalvi-Resume.pdf";
 
 const Home = () => {
   return (
