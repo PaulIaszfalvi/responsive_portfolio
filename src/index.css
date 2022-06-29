@@ -63,3 +63,12 @@ h4,
 h5 {
   font-family: "Goldman", cursive;
 }
+
+.bg-blk-o {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.bd-white {
+  border: 2px solid white;
+  border-radius: 20px;
+}

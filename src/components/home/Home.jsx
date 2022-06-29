@@ -9,7 +9,7 @@ const Home = () => {
         <div className="photo-container col-md-6 col-12 order-md-2 order-1">
           <img
             src={mySelfie}
-            className="photo img-responsive center-block "
+            className="photo img-responsive center-block bg-blk-o bd-white"
             alt=""
             id="mySelfie"
           />

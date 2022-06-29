@@ -4,12 +4,11 @@ function About() {
   return (
     <div className="aboutpage p-5 mx-xs-1 mx-md-auto" id="about">
       <div className="content row">
-        <div className="self-description col-12 px-20 col-md-8 ">
-          <p>Personal interests in software development.</p>
+        <div className="self-description col-12 px-20 col-md-8 mx-auto bg-blk-o bd-white">
           <p>
-            I majored in computer science because I enjoy making things. I
-            always had a curiosity of how things work, what made them tick and
-            how everything fit together.
+            Majored in computer science because I enjoy making things. I always
+            had a curiosity of how things work, what made them tick and how
+            everything fit together.
           </p>
 
           <p>
@@ -19,18 +18,18 @@ function About() {
             simulations.
           </p>
           <p>
-            I am self taught in HTML, CSS, Javascript, React, MongoDB, Python,
-            and am continuing to perfect my skillset in those subjects.
-            Presently I am also in the process of learning AWS, data analysis
-            with Python, Docker and Kubernetes.
+            Self taught in HTML, CSS, Javascript, React, MongoDB, Python, and am
+            continuing to perfect my skillset in those subjects. Presently I am
+            also in the process of learning AWS, data analysis with Python,
+            Docker and Kubernetes.
           </p>
         </div>
-        <div className="skills-set col-12 mobile-font-size col-md-4 ">
+        <div className="skills-set col-12 mobile-font-size col-md-4 mx-auto bg-blk-o bd-white">
           <h1 className="display-4 text-center">Skills</h1>
           <br />
 
           <div className="main-skills">
-            <h1>Main Skills</h1>
+            <h1 className="text-center">Main Skills</h1>
             <br />
             <ul>
               <li>
@@ -77,7 +76,7 @@ function About() {
             </ul>
           </div>
           <div className="familiar-skills">
-            <h1>Familiar With</h1>
+            <h1 className="text-center">Familiar With</h1>
             <br />
             <ul>
               <li>
