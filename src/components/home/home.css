@@ -41,7 +41,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   font-weight: bold;
-  background-image: url(/home/paul/Programming/React/responsive_portfolio/src/components/images/binary.jpg);
+  background-image: url(../images/binary.jpg);
   background-size: cover;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
