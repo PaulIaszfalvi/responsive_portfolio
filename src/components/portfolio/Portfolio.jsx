@@ -1,20 +1,10 @@
 import "./portfolio.css";
 import GridItem from "./gridItem";
 import projectsData from "./projectsData.json";
-import { MdChevronLeft, MdChevronRight } from "react-icons/md";
+import Carousel from "react-material-ui-carousel";
 
 function Portfolio() {
   const baseUrl = "../images/";
-
-  const scrollLeft = () => {
-    var slider = document.getElementById("scroll");
-    slider.scrollLeft = slider.scrollLeft - 300;
-  };
-
-  const scrollRight = () => {
-    var slider = document.getElementById("scroll");
-    slider.scrollLeft = slider.scrollLeft + 300;
-  };
 
   return (
     <div className="portfoliopage" id="portfolio">
@@ -25,12 +15,10 @@ function Portfolio() {
       </div> */}
 
       <div className="portfolio-content ">
-        <MdChevronLeft
-          className="chevrons hvr-pop rounded-circle"
-          onClick={scrollLeft}
-        />
+        {/* 
+        <div id="scroll" className="sliding-cards container snap-inline"> */}
 
-        <div id="scroll" className="sliding-cards container snap-inline">
+        <Carousel className="carousel-container mx-auto">
           {projectsData.map((data, i) => (
             <div key={i}>
               <GridItem
@@ -42,12 +30,7 @@ function Portfolio() {
               />
             </div>
           ))}
-        </div>
-
-        <MdChevronRight
-          className="chevrons hvr-pop rounded-circle"
-          onClick={scrollRight}
-        />
+        </Carousel>
       </div>
     </div>
   );
