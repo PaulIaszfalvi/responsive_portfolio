@@ -3,6 +3,7 @@
   max-width: 1200px;
   margin: auto;
   min-height: 100vh;
+  position: relative;
 }
 
 .home-content-container {
