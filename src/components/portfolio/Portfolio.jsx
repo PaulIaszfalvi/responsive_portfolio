@@ -18,7 +18,14 @@ function Portfolio() {
         {/* 
         <div id="scroll" className="sliding-cards container snap-inline"> */}
 
-        <Carousel className="carousel-container mx-auto">
+        <Carousel
+          className="carousel-container mx-auto"
+          interval={4000}
+          animation="slide"
+          indicators={false}
+          stopAutoPlayOnHover
+          swipe
+        >
           {projectsData.map((data, i) => (
             <div key={i}>
               <GridItem
