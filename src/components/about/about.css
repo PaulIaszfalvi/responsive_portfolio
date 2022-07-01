@@ -15,7 +15,7 @@
 .aboutpage p {
   white-space: normal;
 }
-.content {
+.about-content {
   display: flex;
   justify-content: space-between;
 }
