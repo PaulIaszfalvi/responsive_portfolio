@@ -2,6 +2,8 @@ import "./App.css";
 import { Navbar, Home, About, Portfolio, Contact } from "./components/index";
 
 function App() {
+  document.title = "Paul's Portfolio";
+
   return (
     <>
       <header>
