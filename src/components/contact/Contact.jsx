@@ -2,13 +2,10 @@ import "./contact.css";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
-const FORM_ENDPOINT = ""; // TODO - fill on the later step
-
 const Contact = () => {
   const form = useRef();
   const [showForm, setShowForm] = useState(true);
 
-  //const [submitted, setSubmitted] = useState(false);
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -27,17 +24,18 @@ const Contact = () => {
           console.log(error.text);
         }
       );
+
+    clicked();
   };
 
   const clicked = () => setShowForm(false);
 
   return (
     <div className="contactpage p-5 " id="contact">
-      {showForm ? (
-        <div className="formbox container">
+      <div className="formbox container">
+        {showForm ? (
           <form
             ref={form}
-            action={FORM_ENDPOINT}
             onSubmit={handleSubmit}
             method="POST"
             target="_blank"
@@ -69,19 +67,15 @@ const Contact = () => {
               />
             </div>
             <div className="mb-3 pt-0 text-center">
-              <button
-                className="submit-button btn btn-primary"
-                type="submit"
-                onClick={clicked}
-              >
+              <button className="submit-button btn btn-primary" type="submit">
                 Send a message
               </button>
             </div>
           </form>
-        </div>
-      ) : (
-        <div className="sentForm">Thank you, your message has been sent.</div>
-      )}
+        ) : (
+          <div className="sentForm">Thank you, your message has been sent.</div>
+        )}
+      </div>
 
       <p className="portfolio-copyright text-white">
         Copyright © 2022 - Paul Iaszfalvi |{" "}
