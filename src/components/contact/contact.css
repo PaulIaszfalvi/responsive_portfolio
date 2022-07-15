@@ -34,3 +34,13 @@ textarea {
 .submit-button {
   border-radius: 50px;
 }
+
+.sentForm {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  font-size: 3rem;
+  transition-delay: 300ms;
+}
