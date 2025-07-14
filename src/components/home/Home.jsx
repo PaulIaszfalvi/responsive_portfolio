@@ -30,7 +30,7 @@ const Home = () => {
           </p>
           <div className="resume-link text-center btn-container order-3 pt-5">
 {/*             <a
-{/*               href={resume} */ href=""}
+{               href={resume}  href=""}
               download
               className="btn-outlined-light mt-3 "
               target="_blank"
