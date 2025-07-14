@@ -29,7 +29,7 @@ const Home = () => {
             results-driven team player and developer.
           </p>
           <div className="resume-link text-center btn-container order-3 pt-5">
-            <a
+{/*             <a
 {/*               href={resume} */ href=""}
               download
               className="btn-outlined-light mt-3 "
@@ -37,7 +37,7 @@ const Home = () => {
               rel="noreferrer"
             >
               <h3>Download My Resume</h3>
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
