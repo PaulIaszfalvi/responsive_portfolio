@@ -1,6 +1,52 @@
 import "./about.css";
 
-function About() {
+const MAIN_SKILLS = [
+  { icon: "devicon-html5-plain colored", label: "HTML5" },
+  { icon: "devicon-css3-plain colored", label: "CSS3" },
+  { icon: "devicon-bootstrap-plain-wordmark colored", label: "Bootstrap" },
+  { icon: "devicon-javascript-plain colored", label: "Javascript" },
+  { icon: "devicon-react-plain colored", label: "React" },
+  { icon: "devicon-angular-plain colored", label: "Angular" },
+  { icon: "devicon-nodejs-plain colored", label: "Node.js" },
+  { icon: "devicon-python-plain colored", label: "Python" },
+  { icon: "devicon-git-plain colored", label: "Git" },
+  { icon: "devicon-github-plain colored", label: "Github" },
+  { icon: "devicon-windows8-original colored", label: "Windows" },
+  { icon: "devicon-apple-original colored", label: "OSX" },
+  { icon: "devicon-linux-plain colored", label: "Linux" },
+];
+
+const FAMILIAR_SKILLS = [
+  { icon: "devicon-typescript-plain colored", label: "Typescript" },
+  { icon: "devicon-c-plain colored", label: "C" },
+  { icon: "devicon-cplusplus-plain colored", label: "C++" },
+  { icon: "devicon-java-plain colored", label: "Java" },
+  { icon: "devicon-mongodb-plain colored", label: "MongoDB" },
+  { icon: "devicon-mysql-plain colored", label: "MySQL" },
+];
+
+const SkillItem = ({ skill, skipMargin }) => (
+  <li className={skipMargin ? "" : ""}>
+    <i className={skill.icon}></i>
+    {skill.label}
+  </li>
+);
+
+const SkillsSection = ({ title, skills }) => (
+  <div className="skills-section">
+    <h2 className="text-center">
+      {title}
+    </h2>
+    <br />
+    <ul>
+      {skills.map((skill, index) => (
+        <SkillItem key={`${title}-${index}`} skill={skill} />
+      ))}
+    </ul>
+  </div>
+);
+
+const About = () => {
   return (
     <div className="aboutpage p-5 mx-xs-1 mx-md-auto" id="about">
       <div className="about-content row">
@@ -12,7 +58,7 @@ function About() {
           </p>
 
           <p>
-            My present goals are to become more profficient in software
+            My present goals are to become more proficient in software
             development, improve my current skillset, and eventually branch out.
             I'm curious about robotics, machine learning, modeling and
             simulations.
@@ -29,173 +75,15 @@ function About() {
           <br />
 
           <div className="main-skills">
-            <h1 className="text-center">Main Skills</h1>
-            <br />
-            <ul>
-              <li>
-                <i className="devicon-html5-plain colored"> </i>
-                HTML5
-              </li>
-              <i className="devicon-css3-plain colored"> </i>
-              CSS3
-              <li className="ml-4">
-                <i className="devicon-bootstrap-plain-wordmark colored"></i>
-                Bootstrap
-              </li>
-              <li>
-                <i className="devicon-javascript-plain colored"> </i>Javascript
-              </li>
-              <li>
-                <i className="devicon-react-plain colored"> </i>
-                React
-              </li>
-              <li>
-                <i className="devicon-nodejs-plain colored"> </i>
-                Node.js
-              </li>
-              <li>
-                <i className="devicon-python-plain colored"> </i>
-                Python
-              </li>
-              <li>
-                <i className="devicon-git-plain colored"> </i>Git
-              </li>
-              <li>
-                <i className="devicon-github-plain colored"> </i>Github
-              </li>
-              <br />
-              <li>
-                <i className="devicon-windows8-original colored"> </i>
-                Microsoft Windows
-              </li>
-              <li>
-                <i className="devicon-linux-plain colored"> </i>
-                Linux
-              </li>
-              <li className="row ml-4">Microsoft Office</li>
-            </ul>
+            <SkillsSection title="Main Skills" skills={MAIN_SKILLS} />
           </div>
           <div className="familiar-skills">
-            <h1 className="text-center">Familiar With</h1>
-            <br />
-            <ul>
-              <li>
-                <i className="devicon-typescript-plain colored"> </i>
-                Typescript
-              </li>
-              <li>
-                <i className="devicon-c-plain colored"> </i>C
-              </li>
-              <li>
-                <i className="devicon-cplusplus-plain colored"> </i>C++
-              </li>
-              <li>
-                <i className="devicon-java-plain colored"> </i>Java
-              </li>
-              <li>
-                <i className="devicon-mongodb-plain colored"> </i>
-                MongoDB
-              </li>
-              <li>
-                <i className="devicon-mysql-plain colored"> </i>
-                MySQL
-              </li>
-            </ul>
+            <SkillsSection title="Familiar With" skills={FAMILIAR_SKILLS} />
           </div>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default About;
-
-// <div className="row">
-//         <div className="part-one col-8 px-20">
-//           <p>Personal interests in software development.</p>
-//           <p>Why I chose this field.</p>
-//           <p>What are my interests in it.</p>
-//           <p>What do I hope to achieve.</p>
-//           <p>What are my present and future goals.</p>
-//         </div>
-//         <div className="part-two col-4">
-//           <h1 className="display-4">Experience with</h1>
-//           <br />
-//           <ul>
-//             <li className="row">
-//               <DiHtml5 color="blue" size="1.5em" />
-//               HTML
-//             </li>
-//             <li className="row">
-//               <DiCss3 color="" size="1.5em" />
-//               CSS
-//             </li>
-//             <li className="ml-4 row">
-//               <DiBootstrap color="purple" size="1.5em" />
-//               Bootstrap
-//             </li>
-//             <li className="row">
-//               <DiJavascript1 />
-//               Javascript
-//             </li>
-//             <li className="row">
-//               <i className="devicon-typescript-plain colored"> </i>
-//               Typescript
-//             </li>
-//             <li className="row">
-//               <i className="devicon-nodejs-plain colored"> </i>
-//               Node.js
-//             </li>
-//             <li>
-//               <i className="devicon-c-plain colored"> </i>C
-//             </li>
-//             <li>
-//               <i className="devicon-cplusplus-plain colored"> </i>C++
-//             </li>
-//             <li>
-//               <i className="devicon-java-plain colored"> </i>Java
-//             </li>
-//             <li>
-//               <i className="devicon-mongodb-plain colored"> </i>
-//               MongoDB
-//             </li>
-//             <li>
-//               <i className="devicon-mysql-plain-wordmark colored"> </i>
-//               MySQL
-//             </li>
-//             <li>
-//               <i className="devicon-react-plain colored"> </i>
-//               React
-//             </li>
-//             <li>
-//               <i className="devicon-python-plain colored"> </i>
-//               Python
-//             </li>
-//             <li>
-//               <DiGitMerge color="orange" size="1.5em" />
-//               Git
-//             </li>
-//             <li className="row">
-//               <DiGithubBadge color="black" size="1.5em" /> Github
-//             </li>
-
-//             <br />
-
-//             <li className="row">
-//               <img
-//                 className="px-2 img-fluid"
-//                 src="https://img.icons8.com/color/24/000000/office-365.png"
-//               />
-//               Microsoft Office
-//             </li>
-//             <li>
-//               <i className="devicon-windows8-original colored"> </i>
-//               Microsoft Windows
-//             </li>
-//             <li>
-//               <i className="devicon-linux-plain colored"> </i>
-//               Linux
-//             </li>
-//           </ul>
-//         </div>
-//       </div>

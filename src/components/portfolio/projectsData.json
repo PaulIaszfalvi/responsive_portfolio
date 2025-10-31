@@ -3,19 +3,18 @@
     "title": "Python Memory Game",
     "image": "PythonMemoryGame.png",
     "description": "A simple python3 project using the tkinter library and various image processing libraries to create a memory game.",
-    "link": "https://github.com/PaulIaszfalvi/Python_Projects_Fun/tree/main/Mid/MemoryGame"
+    "github": "https://github.com/PaulIaszfalvi/Python_Projects_Fun/tree/main/Mid/MemoryGame"
   },
   {
     "title": "News Aggregator",
     "image": "NewsAggregator.png",
-    "description": "A full MERN stack news aggregator built from scratch. Uses puppeteer for scraping online data in real time. ",
-    "goToLink": "Test it out",
-    "link": ""
+    "description": "A full MERN stack news aggregator built from scratch. Uses puppeteer for scraping online data in real time.",
+    "github": "https://github.com/PaulIaszfalvi/NewsAggregator"
   },
   {
     "title": "Project 3",
     "image": "project3.jpg",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga facilis maiores magnam quidem rem, quo illo sunt eius adipisci excepturi.",
-    "link": ""
+    "github": "https://github.com/PaulIaszfalvi/Project3"
   }
 ]

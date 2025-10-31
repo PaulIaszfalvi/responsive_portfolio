@@ -34,19 +34,41 @@
 .email-text {
   margin-bottom: unset;
 }
-/* 
-.email-text-firstname {
-  -webkit-text-stroke: 1px rgb(66 133 244);
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
 }
 
-
-.email-text-lastname {
-  -webkit-text-stroke: 1px rgb(244 180 0);
+.social-link a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: inherit;
 }
 
-.email-text-link {
-  -webkit-text-stroke: 1px rgb(15 157 88);
-} */
+.github-text {
+  font-size: 0.95rem;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.linkedin-container {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+}
+
+.linkedin-text {
+  font-size: 0.95rem;
+  color: #0a66c2;
+  font-weight: 600;
+}
+
+.linkedin-text i {
+  margin-left: 2px;
+}
 
 .pages {
   flex: 2;
@@ -67,12 +89,17 @@
   cursor: pointer;
 }
 
+.nav-link {
+  cursor: pointer;
+}
+
 @-webkit-keyframes hvr-pop {
   50% {
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
   }
 }
+
 @keyframes hvr-pop {
   50% {
     -webkit-transform: scale(1.2);
@@ -88,6 +115,7 @@
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
+
 .hvr-pop:hover,
 .hvr-pop:focus,
 .hvr-pop:active {
@@ -100,6 +128,14 @@
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
   color: rgba(85, 163, 252, 0.9);
+}
+
+.github:hover .github-text {
+  color: rgba(85, 163, 252, 0.9);
+}
+
+.linkedin:hover .linkedin-text {
+  color: #0b5cdb;
 }
 
 @media only screen and (max-width: 760px) {
@@ -126,5 +162,14 @@
     border: 1px solid white;
     border-radius: 25px;
     background-color: red;
+  }
+
+  .social-link a {
+    gap: 4px;
+  }
+
+  .github-text,
+  .linkedin-text {
+    font-size: 0.85rem;
   }
 }
